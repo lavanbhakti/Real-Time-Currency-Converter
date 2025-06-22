@@ -43,7 +43,7 @@ export default class CurrencyConverter extends LightningElement {
 
      handleConversion(){
         this.showSpinner = true;
-        let endpoint = "https://exchange-rates.abstractapi.com/v1/live/?api_key=<YourAPIKey>&base="+this.fromCurrency+"&target="+this.toCurrency;
+        let endpoint = "https://exchange-rates.abstractapi.com/v1/live/?api_key=3453a8deb4384183aa4af704da65a48a&base="+this.fromCurrency+"&target="+this.toCurrency;
         console.log("endpoint "+endpoint);
         fetch(endpoint)
         .then(response => response.json())
